@@ -33,7 +33,7 @@ public class LotteryController {
         Lottery_en existingLottery = lotteryMapper.select(name);
 
         if (existingLottery != null) {
-            throw new RuntimeException("用户已存在");
+            throw new RuntimeException("你翻过牌了，别来找茬");
         }
         Card card = cardMapper.select(id);
 
